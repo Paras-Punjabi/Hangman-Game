@@ -1,0 +1,243 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  /* taken form uigradients.com */
+  background: #f46b45;
+  background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+  background: linear-gradient(to right, #eea849, #f46b45);
+  user-select: none;
+  font-family: 'Asap', sans-serif;
+}
+.buttonsDiv {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+  width: 33rem;
+  align-items: center;
+}
+button {
+  height: 3rem;
+  font-size: 30px;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  color: whitesmoke;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+h1 {
+  font-size: 55px;
+  color: whitesmoke;
+}
+.randomWord {
+  height: 3rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.hintContainer,
+.livesDiv {
+  font-size: 30px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.livesDiv {
+  margin-top: -10px;
+}
+.space {
+  position: relative;
+  height: 5px;
+  width: 30px;
+  background-color: whitesmoke;
+  margin: 10px;
+}
+
+.keyboardContainer {
+  display: flex;
+  height: 40px;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.key {
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s linear;
+}
+.key:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.hangman {
+  height: 200px;
+  width: 500px;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: whitesmoke;
+}
+.letterGuess {
+  font-size: 30px;
+  color: whitesmoke;
+  position: relative;
+  left: 3px;
+  top: -37px;
+}
+.bottomLine {
+  height: 2px;
+  width: 200px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 167px;
+  left: 27px;
+}
+.verticalLine {
+  height: 176px;
+  width: 3px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 10px;
+  left: 38px;
+}
+.topLine {
+  height: 2px;
+  width: 200px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 21px;
+  left: 27px;
+}
+.smallLine {
+  height: 12px;
+  width: 3px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 23px;
+  left: 127px;
+}
+.head {
+  height: 40px;
+  width: 40px;
+  border: 2px solid whitesmoke;
+  position: absolute;
+  top: 35px;
+  left: 108px;
+  border-radius: 50%;
+}
+.hangmanBody {
+  height: 50px;
+  width: 3px;
+  position: absolute;
+  background-color: whitesmoke;
+  top: 75px;
+  left: 127px;
+}
+.hand {
+  top: 65px;
+  position: absolute;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 3px;
+}
+.leftHand {
+  transform-origin: bottom;
+  transform: rotate(-135deg);
+  left: 126px;
+}
+.rightHand {
+  transform-origin: bottom;
+  transform: rotate(135deg);
+  left: 128px;
+}
+
+.legs {
+  top: 124px;
+  position: absolute;
+  height: 45px;
+  width: 3px;
+  background-color: whitesmoke;
+}
+.leftLeg {
+  left: 127px;
+  transform-origin: top;
+  transform: rotate(45deg);
+}
+.rightLeg {
+  left: 127px;
+  transform-origin: top;
+  transform: rotate(-45deg);
+}
+.head::after,
+.head::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  top: 12px;
+  left: 9px;
+}
+.head::before {
+  top: 12px;
+  left: 23px;
+}
+.nose {
+  position: relative;
+  height: 4px;
+  width: 1px;
+  background-color: whitesmoke;
+  top: 19px;
+  left: 18px;
+}
+
+.smile {
+  position: relative;
+  height: 1px;
+  width: 13px;
+  top: 24px;
+  left: 12px;
+  background-color: whitesmoke;
+}
+.text {
+  position: absolute;
+  font-size: 30px;
+  color: whitesmoke;
+  top: 76px;
+  right: 5px;
+}
