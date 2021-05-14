@@ -7,3 +7,4 @@
    5.  At last if your all lives are 0 the Hangman image will be completed and after that you can get what was the actual word and it's meaning.
    6.  You can click on "Get Another Word" to get new word.
    7. To play in mobile phones rotate your phone to have better experience.
+3. Live at https://paras-punjabi.github.io/Hangman-Game/
